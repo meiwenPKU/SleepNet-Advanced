@@ -1,8 +1,8 @@
 # SleepNet-Advanced
 
-This repository is created by Hemin Yang (hyang350@gatech.edu) and Chenyang Shi (cs3000@columbia.edu) for the final project in Gatech cse 6250 2018 spring, containing the source codes which try to reproduce the results reported in [SleepNet](https://arxiv.org/pdf/1707.08262.pdf). However, a different dataset ([SHHS](https://sleepdata.org/datasets/shhs)) will be used because the dataset used in [SleepNet](https://arxiv.org/pdf/1707.08262.pdf) is not publicaly available
+This repository is created by Hemin Yang (hyang350@gatech.edu) and Chenyang Shi (cs3000@columbia.edu) for the final project in Gatech cse 6250 2018 spring, containing the source codes which try to reproduce the results reported in [SleepNet](https://arxiv.org/pdf/1707.08262.pdf). However, we use a different dataset ([SHHS](https://sleepdata.org/datasets/shhs)) because the dataset used in [SleepNet](https://arxiv.org/pdf/1707.08262.pdf) is not publicaly available
 
-Please follow the following steps to reproduce our results
+Please follow the belowing steps to reproduce our results
 
 # Step 1: download the orgininal data
 1.1) download the annotation xml files for shhs1 from https://sleepdata.org/datasets/shhs/files/polysomnography/annotations-events-nsrr/shhs1
@@ -12,7 +12,7 @@ Please follow the following steps to reproduce our results
 # Step 2: generate raw data
 By running [genRaw.py](genRaw.py), generate raw features and labels. All features will be stored in shhs1-rawFeature.npz, and labels in shhs1-labels.npz
 
-# Step 3: Descriptive statistics 
+# Step 3: Collect descriptive statistics 
 Collect descriptive statistics of the features and labels with PySpark by running [SparkStats.py](SparkStats.py)
 
 # Step 4: Intra-subject experiments
